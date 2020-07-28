@@ -1,0 +1,117 @@
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170819526-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-170819526-1');
+    </script>
+
+  <!--Added content-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHS GPA Calculator</title>
+  <link href="{{ url_for('static',filename='styles/styles.css') }}" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
+  <!--end-->
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "ca-pub-2454984873346749",
+	    enable_page_level_ads: true
+	  });
+	</script>
+</head>
+<!--Added body tag (not required, but it's done on all web pages today)-->
+<body>
+  <header>
+    Welcome to the Summit HS GPA Calculator!<br>
+    <!--Added div-->
+    <div>
+      <a href="/about">About</a>
+      <br><a href="/usercount">View Count</a>
+      <br><a href="/donate">Donate!</a>
+    </div>
+  </header>
+
+  <div class="form-container">
+    <form method="POST" action="/display">
+
+      <!--added divs containers around all questions to help style-->
+      <div class="question">
+	      <h1>Grade 1</h1>
+	      <input type="text" name="grade_1" placeholder="Letter Grades Only!">
+	      <input type="checkbox" name="honors_1" value="yes">Honors/AP?
+	      <input type="checkbox" name="halfyear_1" value="yes">Half-Year?
+      </div>
+
+	    <div class="question">
+	      <h1>Grade 2</h1>
+	      <input type="text" name="grade_2" placeholder="Letter Grades Only!">
+	      <input type="checkbox" name="honors_2" value="yes">Honors/AP?
+	      <input type="checkbox" name="halfyear_2" value="yes">Half-Year?
+      </div>
+
+	    <div class="question">
+	      <h1>Grade 3</h1>
+	      <input type="text" name="grade_3" placeholder="Letter Grades Only!">
+	      <input type="checkbox" name="honors_3" value="yes">Honors/AP?
+	      <input type="checkbox" name="halfyear_3" value="yes">Half-Year?
+      </div>
+
+	    <div class="question">
+	      <h1>Grade 4</h1>
+	      <input type="text" name="grade_4" placeholder="Letter Grades Only!">
+	      <input type="checkbox" name="honors_4" value="yes">Honors/AP?
+	      <input type="checkbox" name="halfyear_4" value="yes">Half-Year?
+      </div>
+
+	    <div class="question">
+	      <h1>Grade 5</h1>
+	      <input type="text" name="grade_5" placeholder="Letter Grades Only!">
+	      <input type="checkbox" name="honors_5" value="yes">Honors/AP?
+	      <input type="checkbox" name="halfyear_5" value="yes">Half-Year?
+      </div>
+
+	    <div class="question">
+	      <h1>Grade 6</h1>
+	      <input type="text" name="grade_6" placeholder="Letter Grades Only!">
+	      <input type="checkbox" name="honors_6" value="yes">Honors/AP?
+	      <input type="checkbox" name="halfyear_6" value="yes">Half-Year?
+      </div>
+
+	    <div class="question">
+	      <h1>Grade 7</h1>
+	      <input type="text" name="grade_7" placeholder="Letter Grades Only!">
+	      <input type="checkbox" name="honors_7" value="yes">Honors/AP?
+	      <input type="checkbox" name="halfyear_7" value="yes">Half-Year?
+      </div>
+
+	    <div class="question">
+	      <h1>Grade 8</h1>
+	      <input type="text" name="grade_8" placeholder="Letter Grades Only!">
+	      <input type="checkbox" name="honors_8" value="yes">Honors/AP?
+	      <input type="checkbox" name="halfyear_8" value="yes">Half-Year?
+      </div>
+
+	    <div class="question">
+	      <h1>Grade 9</h1>
+	      <input type="text" name="grade_9" placeholder="Letter Grades Only!">
+	      <input type="checkbox" name="honors_9" value="yes">Honors/AP?
+	      <input type="checkbox" name="halfyear_9" value="yes">Half-Year?
+      </div>
+
+	    <div class="question">
+	      <h1>Grade 10</h1>
+	      <input type="text" name="grade_10" placeholder="Letter Grades Only!">
+	      <input type="checkbox" name="honors_10" value="yes">Honors/AP?
+	      <input type="checkbox" name="halfyear_10" value="yes">Half-Year?
+      </div>
+
+	    <br>
+	    <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>

@@ -1,0 +1,28 @@
+THIS IS NOT THE HOME PAGE ANYMORE
+<header>
+	Welcome to Summit HS GPA Calculator!<br>
+	<a href="/about">About</a>
+	<br><a href="/usercount">View Count</a>
+	<br><a href="/usercount">Donate!</a>
+</header>
+<head>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "ca-pub-2454984873346749",
+	    enable_page_level_ads: true
+	  });
+	</script>
+</head>
+
+<h3>Important: Enter letter grades not percentages or numbers</h3>
+<form method="POST" action="/display">
+	{% for num in range(1, 11) %}
+	<h1>Grade {{ num }}</h1>
+	<input type="text" name="grade_{{ num }}">
+	<input type="checkbox" name="honors_{{ num }}" value="yes">Honors/AP?
+	<input type="checkbox" name="halfyear_{{ num }}" value="yes">Half-Year?
+	{% endfor %}
+	<br>
+	<input type="submit" value="submit">
+</form>
